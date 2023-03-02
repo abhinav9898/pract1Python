@@ -10,6 +10,7 @@ while True:
         age= int(input("How old are you?: ").strip())
         if (age >= films[choice][0]) and (films[choice][1] >0):
             print(f'We have {films[choice][1]} seats left, pls book fast')
+            films[choice][1] -= 1
         else:
             print("pls try some other movie")
     else:
