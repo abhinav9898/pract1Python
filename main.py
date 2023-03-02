@@ -1,8 +1,7 @@
-name=input('What is your name? ')
-x=len(name)
-if x<3:
-    print('name must be atleast three characters')
-elif x>50:
-    print('name can be max of fifty characters')
-else:
-    print('name looks good')
+numbers=[2,3,3,4,6,7,8,9,10,9,8]
+uniques=[]
+
+for i in numbers:
+    if i not in uniques:
+        uniques.append(i)
+print(uniques)
